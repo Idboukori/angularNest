@@ -1,6 +1,6 @@
 # Projet Angular et NestJs
 
-
+  Ce projet permet d'ajouter l'utilisateur, ajouter un article , afficher les articles et l'utilisateur qui les a créé et ses détails .
 
 # outiles et library
 - Angular
