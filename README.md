@@ -2,7 +2,7 @@
 
   Ce projet permet d'ajouter l'utilisateur, ajouter un article , afficher les articles et l'utilisateur qui les a créé et ses détails .
 
-# outiles et library
+# outiles et libraries
 - Angular
 - Nestjs
 - fakerjs
