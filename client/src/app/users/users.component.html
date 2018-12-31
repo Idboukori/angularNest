@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Ajouter un utilisateur</h1>
+  <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" class="form-control" formControlName="n">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="text" class="form-control" formControlName="e">
+      </div>
+      <button class="btn btn-outline-primary" [disabled]="addUserForm.invalid">Ajouter</button>
+    </form><br />
+    
+    <h1>Users List</h1>
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id}}</td>
+      <td>{{ user.name}}</td>
+      <td>{{ user.email}}</td>
+
+    </tr>
+  </table>
+</div>
